@@ -2,7 +2,7 @@
 
 Seams for code running in the browser page: location, history, storage, cookies, Google Tag Manager and Astro. Each seam is a small SDK with a fake under `./testing`, so code that touches the page can be tested without one.
 
-The code arrives by migration from the private monorepo `ai-swfactory/seams`; for now each package is a skeleton.
+This repository holds only the guarded skeleton so far: `createWebPage()` returns a page whose `location()` is `about:blank`, `createGoogleTagManager()` one whose `events()` holds no events, and `createAstro()` one whose `page()` is the route `/`; each package's `./testing` holds a fake of it.
 
 ## Packages
 
